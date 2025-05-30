@@ -14,7 +14,7 @@ fetch("/header.html")
     .then(data => {
         document.getElementById("header-container").innerHTML = data;
 
-    })
+    });
 
 /*footer*/
 fetch("/footer.html")
@@ -22,7 +22,7 @@ fetch("/footer.html")
     .then(data => {
         document.getElementById("footer-container").innerHTML = data;
 
-    })
+    });
 
 /*Dark/light button implementation*/
 function LnDModeSetup() {
@@ -53,5 +53,6 @@ function LnDModeSetup() {
 window.addEventListener("load", () => {
     const loaded = document.getElementById("loading");
     loaded.classList.add("loaded");
-    setTimeout(() => loaded.remove(), 2000);
+    /*GOLDEN RATIO!!!*/
+    setTimeout(() => loaded.remove(), 1618);
 });
