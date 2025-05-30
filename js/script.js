@@ -1,6 +1,6 @@
 
 /*navbar*/
-fetch("navbar.html")
+fetch("/navbar.html")
     .then(res => res.text())
     .then(data => {
         document.getElementById("navbar-container").innerHTML = data;
@@ -9,7 +9,7 @@ fetch("navbar.html")
     });
 
 /*header*/
-fetch("header.html")
+fetch("/header.html")
     .then(res => res.text())
     .then(data => {
         document.getElementById("header-container").innerHTML = data;
@@ -17,7 +17,7 @@ fetch("header.html")
     })
 
 /*footer*/
-fetch("footer.html")
+fetch("/footer.html")
     .then(res => res.text())
     .then(data => {
         document.getElementById("footer-container").innerHTML = data;
