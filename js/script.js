@@ -56,5 +56,5 @@ document.addEventListener('DOMContentLoaded', () => {
     const loaded = document.getElementById("loading");
     setTimeout(() => {
         loaded.classList.add("loaded");
-    }, (curr === 'gallery.html' || curr === 'donate.html') ? 500 : 1618);
+    }, (curr === 'gallery.html' || curr === 'donate.html') ? 1000 : 1618);
 });
