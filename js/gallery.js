@@ -57,12 +57,16 @@ class GalleryManager {
     displayEvent(event) {
         // Update video player
         this.player.innerHTML = `
-            <iframe 
-                src="${event.videoUrl}"
-                allow="autoplay; fullscreen; picture-in-picture" 
-                allowFullScreen
-                loading="lazy">
-            </iframe>
+            <div style="padding:56.25% 0 0 0;position:relative;">
+                <iframe 
+                    src="${event.videoUrl}"
+                    <!--Be ify about this below-->
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media;" 
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                    allowFullScreen
+                    loading="lazy">
+                </iframe>
+            </div>
         `;
 
         // Update description
