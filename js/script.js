@@ -50,9 +50,11 @@ function LnDModeSetup() {
 }
 
 /*Loading Screen is done*/
-window.addEventListener("load", () => {
+/*Will determine what page we are on*/
+const curr = window.location.pathname.split("/").pop();
+document.addEventListener('DOMContentLoaded', () => {
     const loaded = document.getElementById("loading");
-    loaded.classList.add("loaded");
-    /*GOLDEN RATIO!!!*/
-    setTimeout(() => loaded.remove(), 1618);
+    setTimeout(() => {
+        loaded.classList.add("loaded");
+    }, (curr === 'gallery.html' || curr === 'donate.html') ? 500 : 1618);
 });
