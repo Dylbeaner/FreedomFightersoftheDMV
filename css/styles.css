@@ -76,25 +76,36 @@ main {
     margin: 0;
 }
 
+/* For the sidebar */
+.sidebar {
+    /* Previous properties remain the same */
+    background-color: #F8F8F8; /* Light gray background */
+}
+
+/* Style the list items with red background */
 .event-list li {
     padding: 1rem;
     cursor: pointer;
-    border-bottom: 1px solid var(--secondary-color);
+    border-bottom: 1px solid #DDD;
+    background-color: #B22222; /* Deep red */
+    color: white;
 }
 
+/* Style hover state */
 .event-list li:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #CD5C5C; /* Lighter red for hover */
 }
 
+/* Style active state */
 .event-list li.active {
-    background-color: var(--secondary-color);
-    color: var(--base-color);
+    background-color: #8B0000; /* Darker red for active state */
+    color: white;
 }
 
+/* Adjust the date color in sidebar for better visibility */
 .event-date {
-    display: block;
-    font-size: 0.8rem;
-    color: var(--secondary-color);
+    color: #FFE4E1; /* Light color for dates */
+    opacity: 0.9;
 }
 
 .gallery-item {
@@ -285,4 +296,12 @@ nav a:hover {
     background-color: lightgray;
     /*This should work*/
     color: black;
+}
+
+/* For the footer */
+footer {
+    background-color: #004d26; /* Dark forest green */
+    color: #FFFFFF;
+    padding: 1rem;
+    width: 100%;
 }
