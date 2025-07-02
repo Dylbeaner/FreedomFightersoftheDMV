@@ -14,7 +14,7 @@ class GalleryManager {
             const data = await response.json();
             this.setupGallery(data.events);
         } catch (error) {
-            //TODO REFRESH
+            //TODO REFRESH?
             console.error('Error loading gallery data: REFRESH', error);
         }
     }
@@ -54,13 +54,14 @@ class GalleryManager {
         }
     }
 
+    //TODO MODIFY
     displayEvent(event) {
         // Update video player
         this.player.innerHTML = `
             <div style="padding:56.25% 0 0 0;position:relative;">
                 <iframe 
                     src="${event.videoUrl}"
-                    <!--Be ify about this below-->
+                    <!--Be iffy about this below-->
                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"; 
                     style="position: absolute; top: 0;left:0;width:100%;height:100%";
                     allowFullScreen
@@ -89,7 +90,7 @@ class GalleryManager {
     }
 }
 
-// Function to show full-size image (optional)
+// Function opens images
 function showFullImage(fullSizePath, caption) {
     const modal = document.createElement('div');
     modal.className = 'image-modal';
@@ -103,7 +104,7 @@ function showFullImage(fullSizePath, caption) {
     document.body.appendChild(modal);
 }
 
-// Initialize gallery when DOM is loaded
+// Initializes the gallery when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     const gallery = new GalleryManager();
     gallery.loadGalleryData();
