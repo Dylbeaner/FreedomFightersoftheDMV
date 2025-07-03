@@ -1,38 +1,6 @@
 {
   "events": [
-    {
-      "id": "event1",
-      "title": "Example Title",
-      "date": "2025-1-15",
-      "description": "There is a big sample description here",
-      "videoUrl": "https://www.youtube.com/embed/watch?v=tQHAwV9B8hQ",
-      "images": [
-        {
-          "thumbnail": "/images/example1.jpg",
-          "fullSize": "/images/example2.jpg",
-          "caption": "EXAMPLE CAPTION"
-        },
-        {
-          "thumbnail": "/images/event1/thumb2.jpg",
-          "fullSize": "/images/event1/full2.jpg",
-          "caption": "Image 2 caption"
-        }
-      ]
-    },
-    {
-      "id": "event2",
-      "title": "How To Get Started with C (EXAMPLE)",
-      "date": "6/3/2025",
-      "description": "A very long description refers to a detailed, comprehensive text description of an image, visual, or other non-text content. It's used when the content is complex, nuanced, or requires more than a simple alternative text description to be fully understood. Long descriptions can be multiple paragraphs long and may include details like tables, lists, or other elements to convey the full meaning of the visual. ",
-      "videoUrl": "https://player.vimeo.com/video/555068566?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-      "images": [
-        {
-          "thumbnail": "/images/example1.jpg",
-          "fullSize": "/images/example2.jpg",
-          "caption": "EXAMPLE CAPTION"
-        }
-      ]
-    },
+
     {
       "id": "event3",
       "title": "Example Title",

@@ -160,8 +160,9 @@ main {
 }
 
 .sidebar {
+    color: var(--base-color);
     width: 250px;
-    background-color: var(--secondary-color);
+    background-color: var(--text-color);
     padding: 1rem;
     /* makes scrolling work till line 180 */
     height: calc(100vh - 4vh - 2rem); /* Subtract navbar height (4vh) and padding (2rem) */
@@ -180,12 +181,12 @@ main {
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-    background: var(--text-color);
+    background: silver;
     border-radius: 4px;
 }
 
 .sidebar::-webkit-scrollbar-thumb:hover {
-    background: var(--base-color);
+    background: gray;
 }
 
 .main-content {
