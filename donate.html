@@ -43,13 +43,24 @@
     <main>
         <h3>Donate Here</h3>
         <div class="body-container">
-                                                <!--This is a temporary link!-->
-            <iframe
-                    src="https://www.gofundme.com/f/hunger-strike-for-gaza-save-gaza-from-mass-starvation/widget/medium/"
-                    allowfullscreen
-                    loading="lazy"
-                    title="GoFundMe Donation">
-            </iframe>
+            <!--
+            TODO: Future enhancement
+            - Implement mobile-specific zelle:// URL scheme button
+            - Research best practices for deep linking to Zelle app
+            - Add device detection to show appropriate button/link
+            -->
+            <div class="donation-instructions">
+                <p>To support us via Zelle, please follow these steps:</p>
+                <ol>
+                    <li>Open your banking app or Zelle app</li>
+                    <li>Select "Send Money with Zelle"</li>
+                    <li>Use our number: <strong>(301) 437-7021</strong></li>
+                    <li>Enter the amount you wish to donate</li>
+                    <li>Add "Donation" in the memo field</li>
+                </ol>
+                <p>Don't have Zelle? Click below:</p>
+                <a href="https://www.zellepay.com/get-started" class="zelle-button" target="_blank" rel="noopener noreferrer">Get Started with Zelle</a>
+            </div>
         </div>
     </main>
 
